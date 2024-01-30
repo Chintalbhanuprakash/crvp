@@ -1,4 +1,15 @@
-python -m pip install flask
+import subprocess
+
+def install_flask():
+    try:
+        subprocess.check_call(["python", "-m", "pip", "install", "flask"])
+        print("Flask installed successfully!")
+    except subprocess.CalledProcessError:
+        print("Failed to install Flask. Please check your internet connection and try again.")
+
+# Call the install_flask function to install Flask
+install_flask()
+
 
 from flask import * #importing flask (Install it using python -m pip install flask)
 
