@@ -1,4 +1,5 @@
-pip install flask
+python -m pip install flask
+
 from flask import * #importing flask (Install it using python -m pip install flask)
 
 
